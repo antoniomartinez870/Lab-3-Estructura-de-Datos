@@ -103,3 +103,9 @@ hashmap.c:95:38: error: expected expression before ‘%’ token
    95 |     if(map->buckets[pos]->key!=NULL %% strcmp(map->buckets[pos]->key,key)!=0){
       |                                      ^
 52276cd
+Sun Sep 13 11:34:32 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|3
+total_score: 30/60
+a514412
