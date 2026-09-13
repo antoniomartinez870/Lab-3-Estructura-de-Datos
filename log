@@ -79,3 +79,17 @@ Sun Sep 13 07:59:31 PM UTC 2026:
  tests:  5|4
 total_score: 20/60
 fb81d30
+Sun Sep 13 11:33:45 PM UTC 2026: 
+ hashmap.c | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:95:38: error: expected expression before ‘%’ token
+   95 |     if(map->buckets[pos]->key!=NULL %% strcmp(map->buckets[pos]->key,key)!=0){
+      |                                      ^
+hashmap.c:99:28: error: ‘buckets’ undeclared (first use in this function)
+   99 |                 return map-buckets[pos];
+      |                            ^~~~~~~
+hashmap.c:99:28: note: each undeclared identifier is reported only once for each function it appears in
+85b0aaa
