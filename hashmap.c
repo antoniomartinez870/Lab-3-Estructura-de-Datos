@@ -69,7 +69,7 @@ HashMap * createMap(long capacity) {
 void insertMap(HashMap * map, char * key, void * value) {
     long pos = hash(key,map->capacity);
     if(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
-        while(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL{
+        while(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
             if(pos==map->capacity-1)pos=0;
             else pos++;
         }
