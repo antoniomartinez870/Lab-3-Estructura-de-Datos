@@ -93,3 +93,13 @@ hashmap.c:99:28: error: ‘buckets’ undeclared (first use in this function)
       |                            ^~~~~~~
 hashmap.c:99:28: note: each undeclared identifier is reported only once for each function it appears in
 85b0aaa
+Sun Sep 13 11:34:03 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:95:38: error: expected expression before ‘%’ token
+   95 |     if(map->buckets[pos]->key!=NULL %% strcmp(map->buckets[pos]->key,key)!=0){
+      |                                      ^
+52276cd
